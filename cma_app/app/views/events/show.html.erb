@@ -1,0 +1,9 @@
+<p><%=@event.date%></p>
+<p>Alcahol Served : <% if @event.alcohol_served == true %>
+            Yes
+            <% else %>
+            No
+            <% end %></p>
+
+<br>
+<%= link_to 'Delete this post', event_path , method: :delete %>

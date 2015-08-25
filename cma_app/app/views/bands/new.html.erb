@@ -1,0 +1,7 @@
+<%= form_for @band do |f| %>
+    <%= f.text_field :name, placeholder: 'Name' %><br>
+    <%= f.text_field :genre, placeholder: 'Genre' %><br>
+    Explicit Lyrics ? <%= f.select :explicit_lyrics, [['Yes', true], ['No', false]]%><br>
+	<br>
+    <%= f.submit %>
+<% end %>

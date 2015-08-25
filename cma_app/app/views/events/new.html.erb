@@ -1,0 +1,9 @@
+<%= form_for @event do |f| %>
+    <%= f.date_field :date, placeholder: 'Date' %><br>
+    Alcahol Served ? <%= f.select :alcohol_served, [['Yes', true], ['No', false]]%><br>
+	<%= f.collection_select :venue_id, Venue.all, :id, :name %><br>
+	<% if 
+	<%= f.collection_select :band_id, Band.all, :id, :name %><br>
+	<br>
+    <%= f.submit %>
+<% end %>

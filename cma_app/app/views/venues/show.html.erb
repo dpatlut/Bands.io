@@ -1,0 +1,12 @@
+<p><%=@venue.name%></p>
+    <p><%=@venue.state%></p>
+    <p><%=@venue.city%></p>
+    <p>Family Friendly : <% if @venue.family_friendly == true %>
+            Yes
+            <% else %>
+            No
+            <% end %></p>
+
+<br>
+<a href="/events/new">Add Event to Venue</a> 
+<%= link_to 'Delete this post', venue_path , method: :delete %>

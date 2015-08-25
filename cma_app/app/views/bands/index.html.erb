@@ -1,0 +1,10 @@
+<% @bands.each  do |b| %>
+    <p><%=b.name%></p>
+    <p><%=b.genre%></p>
+    <p>Explicit Lyrics : <% if b.explicit_lyrics == true %>
+            Yes
+            <% else %>
+            No
+            <% end %></p>
+<%end%>
+<a href="/bands/new">Add Band</a>

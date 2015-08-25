@@ -1,0 +1,11 @@
+<h2>Name : <%=@band.name%></h2>
+<p>Genre : <%=@band.genre%></p>
+<p>Explicit Lyrics : <% if @band.explicit_lyrics == true %>
+            Yes
+            <% else %>
+            No
+            <% end %>
+        </p>
+
+<br>
+<%= link_to 'Delete this post', band_path , method: :delete %>
